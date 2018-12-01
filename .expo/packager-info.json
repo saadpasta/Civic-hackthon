@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 13476,
+  "expoServerNgrokUrl": "https://66-px5.anonymous.kabbar-hackthon.exp.direct",
+  "packagerNgrokUrl": "https://packager.66-px5.anonymous.kabbar-hackthon.exp.direct",
+  "ngrokPid": 11932
 }
