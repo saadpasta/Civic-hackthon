@@ -16,7 +16,7 @@ const { width, height } = Dimensions.get('window');
 
 export default class MapScreen extends React.Component {
 	static navigationOptions = {
-		title: 'MAP'
+		title: 'Choose Your Location'
 	};
 
 	render() {
@@ -26,33 +26,8 @@ export default class MapScreen extends React.Component {
 					flex: 1
 				}}
 			>
-					<GooglePlacesAutocomplete
-					minLength={2}
-					listViewDisplayed="auto"
-					autoFocus={false}
-					returnKeyType={'search'}
-					fetchDetails={true}
-					query={{
-						key: 'AIzaSyANkUfLBovPhWMJohvoCTbFbo3Rd7uPLSo',
-						language: 'en'
-					}}
-					textInputProps={{
-						clearButtonMode: 'never',
-						ref: input => {
-							this.textInput = input;
-						}
-					}}
-					onPress={(data, details = null) => {
-						this.props.setMarker(
-							details.geometry.location.lat,
-							details.geometry.location.lng,
-							details.name
-						);
-					}}
-					styles={searchBarStyle}
-					renderLeftButton={() => console.warn()}
-				/>
-				<MapContainer NewMarker={""}/>
+
+				<MapContainer/>
 
 				<TouchableOpacity
 					activeOpacity={0.5}

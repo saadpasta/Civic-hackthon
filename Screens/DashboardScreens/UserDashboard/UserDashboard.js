@@ -17,7 +17,7 @@ export default class UserDashboardScreen extends Component {
         <Button
           title={'Add Items To Recycle'}
           style={styles.input}
-          onPress={()=> this.props.navigation.navigate("Login")}
+          onPress={()=> this.props.navigation.navigate("UserForm")}
         />
       </View>
     );
